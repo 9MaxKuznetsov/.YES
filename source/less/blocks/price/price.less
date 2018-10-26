@@ -1,0 +1,33 @@
+.price__value {
+  position: relative;
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  padding: 32px 0px 8px 0px;
+
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: @cherry;
+  letter-spacing: 1.2px;
+
+  .set-regular;
+}
+
+.price {
+  padding-top: 388px;
+}
+
+.price__value::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/wave.png");
+  z-index: 10;
+  width: 92px;
+  height: 13px;
+  top: -255px;
+  right: 20px;
+  background-position: 0px 0px;
+  background-size: 92px 13px;
+  background-repeat: no-repeat;
+}

@@ -1,5 +1,17 @@
 .questions {
+  position: relative;
   padding-top: 102px;
   width: 290px;
   margin: 0 auto;;
-}
+}
+
+.questions::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/questionmark.png");
+  width: 97px;
+  height: 146px;
+  background-repeat: no-repeat;
+  top: 140px;
+  right: 0px;
+}

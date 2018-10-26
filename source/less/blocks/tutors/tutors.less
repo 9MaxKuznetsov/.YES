@@ -2,9 +2,41 @@
   width: 290px;
   margin: 0 auto;
   padding-top: 22px;
+  position: relative;
 }
 
 .tutors__image {
   display: block;
   font-size: 0px;
+  position: absolute;
+  bottom: -370px;
+  left: -20px;
+}
+
+.tutors::after {
+  content: "";
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 10px solid @indigo;
+  bottom: -120px;
+  left: 40px;
+}
+
+.tutors::before {
+  content: "";
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 35px solid #f5f5f5;
+  bottom: -320px;
+  left: 30px;
 }

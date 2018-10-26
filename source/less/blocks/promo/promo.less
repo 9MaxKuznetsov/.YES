@@ -1,6 +1,9 @@
 .promo {
+  position: relative;
+
   width: 290px;
   margin: 0 auto;
+  padding-top: 270px;
 }
 
 .promo__button {
@@ -16,11 +19,41 @@
   background-color: @cherry;
   border: none;
   border-radius: 40px;
-  box-shadow: 3px 8px 20px rgba(245, 17, 44, .5);
+  box-shadow: 3px 8px 20px rgba(245, 17, 44, 0.5);
 
   .set-extrabold;
 }
 
 .promo__image {
+  position: absolute;
+  top: -40px;
+
   display: block;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: @indigo;
+  border-radius: 50%;
+  top: 25px;
+  right: 20px;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 10px solid @indigo;
+  top: 210px;
+  left: 5px;
 }
