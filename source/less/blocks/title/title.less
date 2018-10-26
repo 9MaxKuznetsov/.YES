@@ -1,5 +1,6 @@
 .title {
   .set-extrabold;
+  position: relative;
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
@@ -8,9 +9,9 @@
 
 .title--promo {
   position: relative;
-}
+}
 
-.title--promo::after {
+.title::after {
   position: absolute;
   content: "";
   width: 65px;
@@ -30,4 +31,16 @@
 .title--questions {
   width: 210px;
   margin: 0 auto;
+}
+
+.title--questions::after {
+  width: 0px;
+}
+
+.title--tutors {
+  font-size: 30px;
+}
+
+.title--tutors::after {
+  width: 0px;
 }
