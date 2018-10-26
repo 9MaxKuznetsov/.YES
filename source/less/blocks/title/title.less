@@ -7,12 +7,27 @@
 }
 
 .title--promo {
-
+  position: relative;
 }
+
+.title--promo::after {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 7px;
+  background-color: @cherry;
+  bottom: -18px;
+  left: 112px;
+}
 
 .title__small {
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px;
+  .set-extrabold;
+}
+
+.title--questions {
+  width: 210px;
+  margin: 0 auto;
 }
