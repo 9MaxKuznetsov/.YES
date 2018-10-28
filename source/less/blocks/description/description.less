@@ -46,3 +46,30 @@
   margin: 0;
   padding-top: 8px;
 }
+
+.description--trial {
+  position: relative;
+  padding: 23px 0px 6px 0px;
+}
+
+.description--trial::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: @indigo;
+  border-radius: 50%;
+  top: -210px;
+  right: 10px;
+}
+
+.description--trial::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: @indigo;
+  border-radius: 50%;
+  bottom: -140px;
+  left: 25px;
+}

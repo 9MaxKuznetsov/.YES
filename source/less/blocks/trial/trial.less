@@ -1,0 +1,40 @@
+.trial {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  padding-top: 310px;
+}
+
+.trial__image {
+  position: absolute;
+  top: 120px;
+  transform: scale(1.1);
+}
+
+.trial::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/wave.png");
+    z-index: 10;
+    width: 92px;
+    height: 13px;
+    top: 120px;
+    right: 0px;
+    background-position: 0px 0px;
+    background-size: 92px 13px;
+    background-repeat: no-repeat;
+}
+
+.trial::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/wave.png");
+    z-index: 10;
+    width: 92px;
+    height: 13px;
+    bottom: 265px;
+    left: 0px;
+    background-position: 0px 0px;
+    background-size: 92px 13px;
+    background-repeat: no-repeat;
+}
